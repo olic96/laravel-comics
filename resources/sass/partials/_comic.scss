@@ -1,0 +1,190 @@
+.comic {
+    .container {
+        max-width: 65.625rem;
+    }
+
+    &__cover {
+        background-color: var(--primary-color);
+        position: relative;
+        height: 5rem;
+
+        &-box {
+            position: absolute;
+            bottom: 1rem;
+            border: .0625rem solid var(--secondary-color-text);
+        }
+        
+        &-img {
+            height: 18.75rem;
+        }
+
+        &-type {
+            position: absolute;
+            top: 0;
+        }
+
+        &-type,
+        &-gallery {
+            color: var(--secondary-color-text);
+            background-color: #00a9d9;
+            padding: .0625rem .1875rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &-gallery {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    &-top {
+        padding: 2.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__dx {
+            width: 65%;
+        }
+
+        &__sx {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            &-adv {
+                text-transform: uppercase;
+                font-weight: 500;
+                color: var(--primary-color-text);
+            }
+        }
+
+        &__title {
+            color: #003f5e;
+            text-transform: uppercase;
+        }
+        
+        &__store {
+            margin: 1.25rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-dx,
+            &-sx {
+                padding: .625rem .9375rem;
+                background-color: #55ba59;
+                border-bottom: .0625rem solid var(--primary-color-text);
+            }
+
+            &-dx {
+                color: #bafd9c;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 70%;
+                border-right: .0625rem solid var(--primary-color-text);
+            }
+
+            &-price,
+            &-sx {
+                color: var(--secondary-color-text);
+            }
+
+            &-sx {
+                width: 30%;
+                .fa-caret-down {
+                    font-size: .75rem;
+                }
+            }
+
+            &-available {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &-center {
+        padding: 1.25rem 0 5rem;
+        border-top: .0625rem solid #e3e3e3;
+        border-bottom: .0625rem solid #e3e3e3;
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+
+            &-dx {
+                width: 45%;
+            }
+
+            &-sx {
+                width: 50%;
+            }
+
+            &-title {
+                color: #003f5e;
+                margin-bottom: 1.5625rem;
+            }
+        }
+
+        &__row {
+            border-top: .0625rem solid #e3e3e3;
+            border-bottom: .0625rem solid #e3e3e3;
+            display: flex;
+            padding: .625rem 0;
+            color: #003f5e;
+
+            &-title {
+                width: 25%;
+            }
+
+            &-text {
+                width: 75%;
+            }
+
+            &-link {
+                color: #00a9df;
+                text-decoration: none;
+
+                &--big {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &-center,
+    &-bottom {
+        background-color: #f6f6f6;
+    }
+
+    &-bottom {
+        &__row {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__col {
+            width: calc(100% / 4);
+            padding: .625rem;
+            display: flex;
+            justify-content: space-between;
+            border-right: .0625rem solid #e3e3e3;
+            border-left: .0625rem solid #e3e3e3;
+
+            &-title {
+                text-transform: uppercase;
+                color: var(--tertiary-color-text);
+                font-weight: 500;
+            }
+
+            &-img {
+                height: 2.5rem;
+            }
+        }
+    }
+}
